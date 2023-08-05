@@ -5,11 +5,6 @@
     "developer": "Volantis Development",
     "website": "https://volantis.dev",
     "dependencies": [
-        "Volantis.Base",
-        "Volantis.Config",
-        "Volantis.Container",
-        "Volantis.Data",
-        "Volantis.File",
-        "Volantis.Utility"
+        "Volantis.Config"
     ]
 }

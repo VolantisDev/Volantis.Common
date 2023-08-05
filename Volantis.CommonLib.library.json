@@ -4,6 +4,7 @@
     "description": "A library containing common classes used by higher-level libraries and applications.",
     "developer": "Volantis Development",
     "website": "https://volantis.dev",
-    "dependencies": [],
-    "devDependencies": []
+    "dependencies": [
+        "Volantis.CoreLib"
+    ]
 }
