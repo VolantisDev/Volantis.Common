@@ -1,0 +1,31 @@
+{
+    "name": "Volantis.Common",
+    "type": "package",
+    "description": "A library containing common classes used by higher-level libraries and applications.",
+    "developer": "Volantis Development",
+    "website": "https://volantis.dev",
+    "authors": [
+        {
+            "name": "Ben McClure",
+            "email": "ben@volantisdev.com"
+        }
+    ],
+    "dependencies": {
+        "Volantis.Core": {
+            "version": "^1.0",
+            "libraries": "*"
+        }
+    },
+    "devDependencies": {
+        "Volantis.Test": "^1.0"
+    },
+    "libraries": {
+        "Volantis.Base": "Volantis.Base",
+        "Volantis.Component": "Volantis.Component",
+        "Volantis.Config": "Volantis.Config",
+        "Volantis.Container": "Volantis.Container",
+        "Volantis.Data": "Volantis.Data",
+        "Volantis.File": "Volantis.File",
+        "Volantis.Query": "Volantis.Query"
+    }
+}
