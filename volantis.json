@@ -20,12 +20,48 @@
         "Volantis.Test": "^1.0"
     },
     "libraries": {
-        "Volantis.Base": "Volantis.Base",
-        "Volantis.Component": "Volantis.Component",
-        "Volantis.Config": "Volantis.Config",
-        "Volantis.Container": "Volantis.Container",
-        "Volantis.Data": "Volantis.Data",
-        "Volantis.File": "Volantis.File",
-        "Volantis.Query": "Volantis.Query"
+        "Volantis.Base": {
+            "path": "lib/Volantis.Base",
+            "uses": [
+                "Volantis.Core:Volantis.Core"
+            ]
+        },
+        "Volantis.Component": {
+            "path": "lib/Volantis.Component",
+            "uses": [
+                "Volantis.Config"
+            ]
+        },
+        "Volantis.Config": {
+            "path": "lib/Volantis.Config",
+            "uses": [
+                "Volantis.Container",
+                "Volantis.File"
+            ]
+        },
+        "Volantis.Container": {
+            "path": "lib/Volantis.Container",
+            "uses": [
+                "Volantis.Data"
+            ]
+        },
+        "Volantis.Data": {
+            "path": "lib/Volantis.Data",
+            "uses": [
+                "Volantis.Base"
+            ]
+        },
+        "Volantis.File": {
+            "path": "lib/Volantis.File",
+            "uses": [
+                "Volantis.Data"
+            ]
+        },
+        "Volantis.Query": {
+            "path": "lib/Volantis.Query",
+            "uses": [
+                "Volantis.Base"
+            ]
+        }
     }
 }
