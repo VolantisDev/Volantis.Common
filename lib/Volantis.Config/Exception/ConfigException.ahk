@@ -1,3 +1,0 @@
-class ConfigException extends AppException {
-
-}

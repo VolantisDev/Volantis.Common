@@ -1,0 +1,3 @@
+class AndGroup extends ConditionGroupBase {
+
+}
