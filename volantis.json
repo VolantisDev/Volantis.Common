@@ -1,8 +1,7 @@
 {
-    "name": "Volantis.Common",
+    "name": "volantis/common",
     "type": "package",
-    "description": "A library containing common classes used by higher-level libraries and applications.",
-    "developer": "Volantis Development",
+    "description": "A library for interacting with version control system",
     "website": "https://volantis.dev",
     "authors": [
         {
@@ -10,58 +9,18 @@
             "email": "ben@volantisdev.com"
         }
     ],
-    "dependencies": {
-        "Volantis.Core": {
-            "version": "^1.0",
-            "libraries": "*"
-        }
+    "require": {
+        "volantis/core": "^1.0 || dev-main"
     },
-    "devDependencies": {
-        "Volantis.Test": "^1.0"
+    "require-dev": {
+        "volantis/test": "^1.0 || dev-main"
     },
     "libraries": {
-        "Volantis.Base": {
-            "path": "lib/Volantis.Base",
-            "uses": [
-                "Volantis.Core:Volantis.Core"
-            ]
-        },
-        "Volantis.Component": {
-            "path": "lib/Volantis.Component",
-            "uses": [
-                "Volantis.Config"
-            ]
-        },
-        "Volantis.Config": {
-            "path": "lib/Volantis.Config",
-            "uses": [
-                "Volantis.Container",
-                "Volantis.File"
-            ]
-        },
-        "Volantis.Container": {
-            "path": "lib/Volantis.Container",
-            "uses": [
-                "Volantis.Data"
-            ]
-        },
-        "Volantis.Data": {
-            "path": "lib/Volantis.Data",
-            "uses": [
-                "Volantis.Base"
-            ]
-        },
-        "Volantis.File": {
-            "path": "lib/Volantis.File",
-            "uses": [
-                "Volantis.Data"
-            ]
-        },
-        "Volantis.Query": {
-            "path": "lib/Volantis.Query",
-            "uses": [
-                "Volantis.Base"
-            ]
-        }
+        "CLR": "lib/CLR.ahk",
+        "Component": "lib/Component",
+        "Data": "lib/Data",
+        "Event": "lib/Event",
+        "Http": "lib/Http",
+        "Query": "lib/Query"
     }
 }
